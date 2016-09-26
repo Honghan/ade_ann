@@ -20,7 +20,7 @@ def query_sqlsvr(query, db_conf):
     medicatons = []
     ADEs = {}
     drugs = {}
-    con_string = 'DSN=%s;UID=%s;PWD=%s;DATABASE=%s;' % (db_conf['db_conndsn'],
+    con_string = 'DSN=%s;UID=%s;PWD=%s;DATABASE=%s;' % (db_conf['dsn'],
                                                         db_conf['user'],
                                                         db_conf['password'],
                                                         db_conf['database'])
@@ -45,7 +45,7 @@ def extract_cris_texts(out_path):
     for txt in txt_list:
         if txt.src_table != table:
             if table.strip() != '':
-                sqls.append(sql_template.format({'table': table, 'col':col, 'ids': ids}))
+                sqls.append(sql_template.format(**{'table': table, 'col':col, 'ids': ids}))
             table = txt.src_table
             col = txt.src_col
             ids = ''
