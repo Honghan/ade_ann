@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # CRF-LSTM models for sequence labeling in Text
 
 
@@ -78,5 +77,4 @@ python train_crf_rnn.py -h
 =======
 # ADE NER Experiment
 ## Update
-- (26 Sep 2016) added a script to extract text files from CRIS database. Testing Fei Li's ANN tool on SLaM data (using Shami's dictionaries)
->>>>>>> 78942da1e9ac1e40b41443ec6a81d7a1b6c71312
+- (26 Sep 2016) added a script to extract text files from CRIS database.
