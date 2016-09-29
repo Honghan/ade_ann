@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CRF-LSTM models for sequence labeling in Text
 
 
@@ -74,3 +75,8 @@ python train_crf_rnn.py -h
     |-scripts           # Utility scripts.
     |-sample-data       # directory with input data format. json files without the umls extension are annotation files 
                           and only needed for training or evaluation during deploy. *.umls.json files are metamap annotation files
+=======
+# ADE NER Experiment
+## Update
+- (26 Sep 2016) added a script to extract text files from CRIS database. Testing Fei Li's ANN tool on SLaM data (using Shami's dictionaries)
+>>>>>>> 78942da1e9ac1e40b41443ec6a81d7a1b6c71312
